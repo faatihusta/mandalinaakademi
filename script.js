@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.querySelectorAll('a').forEach(link => {
           link.style.color = '';
           if (link.getAttribute('href') === `#${sectionId}` && !link.classList.contains('nav-cta')) {
-            link.style.color = '#F0F6FC';
+            link.style.color = '#444444';
           }
         });
       }

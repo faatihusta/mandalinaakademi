@@ -15,21 +15,22 @@
   --clr-accent-glow: #F7931E;
   --clr-gold: #FFD700;
 
-  --clr-bg-deep: #0A0E14;
-  --clr-bg: #0D1117;
-  --clr-bg-card: #161B22;
-  --clr-bg-card-hover: #1C2230;
-  --clr-bg-elevated: #21262D;
+  --clr-bg-deep: #ffffff;
+  --clr-bg: #FCFAF7;
+  --clr-bg-card: #FFFFFF;
+  --clr-bg-card-hover: #c4c4c4;
+  --clr-bg-elevated: #ffffff;
 
-  --clr-text: #F0F6FC;
-  --clr-text-muted: #8B949E;
+  --clr-text1:rgb(255, 255, 255);
+  --clr-text: #1b1b1bed;
+  --clr-text-muted: #000000;
   --clr-text-subtle: #6E7681;
-  --clr-border: rgba(255, 107, 53, 0.15);
+  --clr-border: #E8E2DA;
   --clr-border-hover: rgba(255, 107, 53, 0.35);
 
   /* Glass */
-  --glass-bg: rgba(22, 27, 34, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-bg: rgba(243, 243, 243, 0.84);
+  --glass-border: rgba(243, 243, 243, 0.84);
   --glass-blur: 20px;
 
   /* Typography */
@@ -60,10 +61,10 @@
   --duration-slow: 0.7s;
 
   /* Shadows */
-  --shadow-glow: 0 0 40px rgba(255, 107, 53, 0.15);
+  --shadow-glow: 0 0 40px rgba(255, 255, 255, 0.15);
   --shadow-glow-strong: 0 0 60px rgba(255, 107, 53, 0.25);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --shadow-elevated: 0 16px 48px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 8px 32px rgba(255, 255, 255, 0.754);
+  --shadow-elevated: 0 16px 48px rgba(255, 255, 255, 0.4);
 }
 
 /* ── Reset & Base ── */
@@ -192,7 +193,7 @@ button, input, textarea {
 }
 
 .navbar.scrolled {
-  background: rgba(10, 14, 20, 0.85);
+  background: rgba(240, 240, 240, 0.755);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
@@ -991,7 +992,7 @@ button, input, textarea {
 }
 
 .faq-item.active {
-  background: rgba(22, 27, 34, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   border-color: rgba(255, 107, 53, 0.4);
   box-shadow: var(--shadow-glow);
 }
@@ -1038,13 +1039,13 @@ button, input, textarea {
 
 .faq-item:hover .faq-icon {
   background: var(--clr-primary);
-  color: var(--clr-text);
+  color: var(--clr-text1);
   transform: scale(1.05);
 }
 
 .faq-item.active .faq-icon {
   background: var(--clr-primary);
-  color: var(--clr-text);
+  color: var(--clr-text1);
   transform: rotate(45deg);
 }
 
